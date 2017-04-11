@@ -1,7 +1,7 @@
 /* http://www.menucool.com/jquery-slider */
 
 #thumbs2 {
-    height:300px;
+    height:300px; 
     display:inline-block;
     *display:inline; /* hack for old IE6-7 */
     background-color:#fff;
