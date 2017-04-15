@@ -1,5 +1,5 @@
 .navigation {
-	background-image: url("../img/Navigation/nav-bar.png");
+	background-image: url("../img/Navigation/nav-bar.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	
@@ -16,7 +16,7 @@
 	float: right;
 	display: block;
 
-	background-image: url("../img/Navigation/nav-bar-button.png");
+	background-image: url("../img/Navigation/nav-bar-button.jpg");
 	background-size: 90% 70%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -28,7 +28,7 @@
 }
 			
 .navigation a:active {
-	background-image: url("../img/Navigation/nav-bar-button-depressed.png");
+	background-image: url("../img/Navigation/nav-bar-button-depressed.jpg");
 				
 }
 		
@@ -83,7 +83,7 @@
 }
 
 .page-germany-hutschenhausen {
-	background-image: url("../img/germany-hutschenhausen.png");			
+	background-image: url("../img/germany-hutschenhausen.jpg");
 }
 
 .page-florida {
@@ -91,7 +91,7 @@
 }
 
 .page-colorado {
-	background-image: url("../img/colorado.png");
+	background-image: url("../img/colorado.jpg");
 }
 
 .page-wyoming {
@@ -124,7 +124,7 @@
 }
 
 .button2 {
-	background-image: url("../img/Picture1.png");
+	background-image: url("../img/Picture1.jpg");
 }
 
 			
