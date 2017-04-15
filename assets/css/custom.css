@@ -8,7 +8,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 45px;
+	height: 5%;
 				
 }			
 
@@ -158,4 +158,10 @@ div.desc {
 .gallery-container {
 	position: absolute;
 	bottom: 0;
+}
+
+.page-heading {
+	background-image: url("../img/glass-window.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
