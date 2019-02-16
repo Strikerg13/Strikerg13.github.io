@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "PoorlyAnimatedRacing",
+"dataUrl": "What The Hex.data.unityweb",
+"wasmCodeUrl": "What The Hex.wasm.code.unityweb",
+"wasmFrameworkUrl": "What The Hex.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#314980",
+"cacheControl": {"default": "must-revalidate"}
+}
