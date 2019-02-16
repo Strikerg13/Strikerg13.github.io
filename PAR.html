@@ -14,7 +14,29 @@
   </head>
   <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 960px; height: 600px">
+		  <div class="header" style="background:lightgrey; border:solid grey 3px; padding:3px">
+			<h2>Controls</h2>
+			<div style="background:lightgreen; border:solid green 2px; display:inline-block; padding:2px">
+				 Drive Car: W,A,S,D 
+			</div>
+			<div style="background:yellow; border:solid black 2px; display:inline-block; padding:2px">
+				 Change Camera: C 
+			</div>	
+			<div style="background:white; border:solid grey 2px; display:inline-block; padding:2px">
+				 Pause: SPACE 
+			</div>
+			<div style="background:orange; border:solid blue 2px; display:inline-block; padding:2px">
+				 Reset Car: R  (requires coins) 
+			</div>
+			<div style="background:lightblue; border:solid white 2px; display:inline-block; padding:2px">
+				 Restart Level: TAB 
+			</div>
+			<div style="background:red; border:solid black 2px; color:white; display:inline-block; padding:2px">
+				 Exit Game: ESCAPE 
+			</div>
+		</div>
+	  </div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
