@@ -1,284 +1,59 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | PoorlyAnimatedRacing</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
 	
-		<title>Scrolling Page Practice</title>
+	<title>Poorly Animated Racing</title>
 		
 		<!-- Import the CSS -->
 		<link href="assets/css/bootstrap.css.map" rel="stylesheet"/>
 		<link href="assets/css/bootstrap.min.css.map" rel="stylesheet"/>
 		<link href="assets/css/bootstrap-theme.css.map" rel="stylesheet"/>
 		<link href="assets/css/bootstrap-theme.min.css.map" rel="stylesheet"/>
-		
-		<!-- Our Custom CSS Page -->
-		<link href="assets/css/custom.css" rel="stylesheet"/>
-		
-		<!-- Thumbnail Slider -->
-		<link href="assets/css/thumbs2.css" rel="stylesheet" />
-    		<link href="assets/css/thumbnail-slider.css" rel="stylesheet" type="text/css" />
-    		<script src="assets/js/thumbnail-slider.js" type="text/javascript"></script>
-
-
-		<link rel="icon" href="assets/img/scroll-icon.ico" type="image/x-icon">
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-		<script>
-			$(document).ready(function(){
-			  $("a").on('click', function(event) {
-
-			    if (this.hash !== "") {
-			      event.preventDefault();
-
-			      var hash = this.hash;
-
-			      $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
-   
-			        window.location.hash = hash;
-			      });
-			    } 
-			  });
-			});
-		</script>
-		
-	</head>
 	
-	<body background="assets/img/body-background.jpg">
-
-		<div id="nav-bar" class="navigation">
-			<a style="opacity: 0;"></a>
-			<a href="#PAGEindiana">Indiana</a>
-			<a href="#PAGEwyoming">Wyoming</a>
-			<a href="#PAGEcolorado">Colorado</a>
-			<a href="#PAGEflorida">Florida</a>
-			<a href="#PAGEhutschenhausen">Hutschenhausen</a>
-			<a href="#PAGEnauheim">Nauheim</a>
-			<a href="#PAGEtexas">Texas</a>
-
-			<a href="https://strikerg13.github.io/PAR.html">Try the Game</a>
-			
-			<a href="#PAGEheading" style="float:left;">TOP ^</a>
-		</div>		
-
-	<!-- End Navigation -->
-
-		<div id="PAGEheading" class="div-header" style="padding-left: 20px; padding-top: 20px;">
-			<h1 style="color: white; 
-			     font-family: courier;">Where Have We Been?</h1>
-
-			<p style="color: yellow;
-			      font-size: 1.2em;">
-				Let's have a look at all the places we've been.</p>
-		</div>
-		
-
-	<!-- End Header -->
-
-		<div id="PAGEtexas" class="div-page page-texas">
-			<div class="div-nav-space"></div>
-			<h1>1st Stop...Texas</h1>
-			<p>Literally remember nothing from this place.</p>
-
-			
-			
-		</div>
-
-	<!-- End Texas -->
-
-		<div id="sep-1" class="div-separator">
-			
-		</div>
-
-	<!-- End Seperator 1 -->
-
-		<div id="PAGEnauheim" class="div-page page-germany-nauheim">
-			<div class="div-nav-space"></div>
-			<h1>Nauheim, Germany</h1>
-		</div>
-
-	<!-- End Nauheim Germany -->
-			
-		<div id="sep-2" class="div-separator">
-			<div id="TOhutschenhausen" style="bacground-color: yellow;
-					     height: 45px;
-						position: absolute;
-					     bottom: 0;"></div>
-		</div>
-
-	<!-- End Separator 2 -->
-
-		<div id="PAGEhutschenhausen" class="div-page page-germany-hutschenhausen">
-			<div style="height: 25vh; width: 100vw;">
-				<div class="div-nav-space"></div>
-				<div class="page-heading" style="width: 250px">
-				<h1>Hütschenhausen, Germany</h1>
-				<p>WiesenstraBe 16 <br> 
-			   	66882 Hutschenhausen, Germany</p>
-				</div>
+	<!-- Our Custom CSS Page -->
+		<link href="assets/css/custom.css" rel="stylesheet"/>
+	
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Totally Angular.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body class="div-header">
+    <div class="webgl-content">
+		<div class="header" style="background:lightgrey; border:solid grey 3px; padding:3px; margin-bottom:3px">
+			<h2>Controls</h2>
+			<div style="background:lightgreen; border:solid green 2px; display:inline-block; padding:2px">
+				 Drive Car: W,A,S,D 
 			</div>
-			<div style="height: 50vh; width: 100vw;">
-
+			<div style="background:yellow; border:solid black 2px; display:inline-block; padding:2px">
+				 Change Camera: C 
+			</div>	
+			<div style="background:white; border:solid grey 2px; display:inline-block; padding:2px">
+				 Pause: SPACE 
 			</div>
-			<div  style="height: 25vh; width: 100vw; padding-left: 10vw;">
-			
-			<div id="thumbnail-slider" style="float: left;">
-				<div class="inner">
-          		        	<ul>
-              		        		<li>
-                            				<a href="/">
-                                				<span class="thumb" style="background-image:url("assets/img/gibraltar.jpg")">
-                                    		                 </span>
-                            				</a>
-                        			</li>
-                        			<li>
-                            				<a target="_blank" href="assets/img/visits/gibraltar.jpg" >
-								<img class="thumb" src="assets/img/visits/gibraltar.jpg">
-							</a>
-                        			</li>
-						<li>
-							<a target="_blank" href="assets/img/visits/windsor-england.jpg">
-								<img class="thumb" src="assets/img/visits/windsor-england.jpg">
-								
-							</a>
-						</li>
-                        			<li>
-							<a target="_blank" href="assets/img/visits/forbach-france.jpg">
-								<img class="thumb" src="assets/img/visits/forbach-france.jpg">
-							</a>
-						</li>
-						
-                    			</ul>
-                		</div>
-            		</div>
-
-
-
-
-
-			<!-- <div >
-			<div class="gallery">
-				<a target="_blank" href="assets/img/visits/gibraltar.jpg">
-					<img src="assets/img/visits/gibraltar.jpg" 
-						alt="Gibralta"
-						width="300"
-						height="200">
-				</a>
-				<div class="desc">The Rock of Gibraltar</div>
+			<div style="background:orange; border:solid blue 2px; display:inline-block; padding:2px">
+				 Reset Car: R  (requires coins) 
 			</div>
-
-			<div class="gallery">
-				<a target="_blank" href="assets/img/visits/windsor-england.jpg">
-					<img src="assets/img/visits/windsor-england.jpg"
-						alt="England"
-						width="300"
-						height="200">
-				</a>
-				<div class="desc">Windsor England</div>
+			<div style="background:lightblue; border:solid white 2px; display:inline-block; padding:2px">
+				 Restart Level: TAB 
 			</div>
-
-			<div class="gallery">
-				<a target="_blank" href="assets/img/visits/forbach-france.jpg">
-					<img src="assets/img/visits/forbach-france.jpg"
-						alt="France"
-						width="300"
-						height="200">
-				</a>
-				<div class="desc">Forbach France</div>
-			</div> -->
+			<div style="background:red; border:solid black 2px; color:white; display:inline-block; padding:2px">
+				 Exit Game: ESCAPE 
 			</div>
-			</div>
-
-
 		</div>
-
-	<!-- End Hutschenhausen Germany -->
-
-		<div id="sep-3" class="div-separator">
-			<div id="TOflorida" style="bacground-color: yellow;
-					     height: 100px;
-						position: absolute;
-					     bottom: 0;"></div>
-		</div>
-
-	<!-- End Separator 3 -->
-
-		<div id="PAGEflorida" class="div-page page-florida">
-			<div class="div-nav-space"></div>
-			<h1>Florida</h1>
-			<p>601 Fairway Ave NE <br>
-			Ft. Walton Beach, FL 32547</p>
-
-			
-		</div>
-
-	<!-- End Florida -->
-
-		<div id="sep-4" class="div-separator">
-			<div id="TOcolorado" style="bacground-color: yellow;
-					     height: 45px;
-						position: absolute;
-					     bottom: 0;"></div>
-		</div>
-
-	<!-- End Separator 4 -->
-
-		<div id="PAGEcolorado" class="div-page page-colorado">
-			<div class="div-nav-space"></div>
-			<h1>Colorado</h1>
-			<p>9201 E. 153rd Ave. <br>
-			   Brighton CO, 80602</p>
-		</div>
-
-	<!-- End Colorado -->
-
-		<div id="sep-5" class="div-separator">
-			<div id="TOwyoming" style="bacground-color: yellow;
-					     height: 45px;
-						position: absolute;
-					     bottom: 0;"></div>
-		</div>
-
-	<!-- End Separator 5 -->
-
-		<div id="PAGEwyoming" class="div-page page-wyoming">
-			<div class="div-nav-space"></div>
-			<h1>Wyoming</h1>
-			<p>Laramie Wyoming...worst place ever.</p>
-		</div>
-
-	<!-- End Wyoming -->
-
-		<div id="sep-6" class="div-separator">
-			<div id="TOindiana" style="bacground-color: yellow;
-					     height: 45px;
-						position: absolute;
-					     bottom: 0;"></div>
-		</div>
-
-	<!-- End Separator 6 -->
-
-		<div id="PAGEindiana" class="div-page page-indiana">
-			<div class="div-nav-space"></div>
-			<h1>Indiana</h1>
-			<p>2306 Wake Robin Dr. <br>
-			   West Lafayette, IN 47906</p>
-
-			
-		</div>
-
-	<!-- End Indiana -->
-
-		<div class="div-separator">
-			
-
-		</div>
-
-		
-		<script src="assets/js/bootstrap.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/npm.js"></script>
-		
-
-		
-	</body>
+	
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">PoorlyAnimatedRacing</div>
+      </div>
+    </div>
+  </body>
 </html>
