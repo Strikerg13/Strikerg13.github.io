@@ -165,3 +165,9 @@ div.desc {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
+
+.game-container {
+	background-image: url("../img/glass-window.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}

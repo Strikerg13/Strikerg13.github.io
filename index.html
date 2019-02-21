@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | PoorlyAnimatedRacing</title>
+    <title>Poorly Animated Racing</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
 	
-	<title>Poorly Animated Racing</title>
-		
 		<!-- Import the CSS -->
 		<link href="assets/css/bootstrap.css.map" rel="stylesheet"/>
 		<link href="assets/css/bootstrap.min.css.map" rel="stylesheet"/>
@@ -24,8 +22,23 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Totally Angular.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body class="div-header">
+  <body background="assets/img/body-background.jpg">
+  
+  <div id="nav-bar" class="navigation">
+			<a style="opacity: 0;"></a>
+			<a>Exit Game: ESCAPE</a>
+			<a>Restart Level: TAB</a>
+			<a>Reset Car: R (requires coins)</a>
+			<a>Pause: SPACE</a>
+			<a>Change Camera: C</a>
+			<a>Drive Car: W,A,S,D</a>
+			<a>Controls:</a>
+		</div>
+  
+	<div class="div-header">
     <div class="webgl-content">
+		
+		<!-- 
 		<div class="header" style="background:lightgrey; border:solid grey 3px; padding:3px; margin-bottom:3px">
 			<h2>Controls</h2>
 			<div style="background:lightgreen; border:solid green 2px; display:inline-block; padding:2px">
@@ -47,13 +60,16 @@
 				 Exit Game: ESCAPE 
 			</div>
 		</div>
+		-->
 	
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
+      <div id="gameContainer" style="width: 960px; height: 600px; position: center"></div>
+	  
+	  <div class="footer">
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">PoorlyAnimatedRacing</div>
       </div>
+	  
+	  
     </div>
+	</div>
   </body>
 </html>
